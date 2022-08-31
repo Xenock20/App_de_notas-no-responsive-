@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.cont{
+    margin: 5vh auto;
+}
+
+form{
+    margin: auto;
+    width: 100vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    border: #DBDBDB solid 1px;
+}
+
+#titulo{
+    background-color: #F0F0F0;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+#nota{
+    max-width: 90vw;
+    height: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+#add{
+    outline: none;
+    border: none;
+    padding: 5px; 
+    font-size: 18px;
+    color: #717171;
+    cursor: pointer;
+    transition: all 0.20s;
+}
+
+#add:active{
+    color: #31e000;
+}
+
+.list{
+    margin: 5vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.note{
+    padding: 5px;
+    width: 90%;
+    margin: 10px;
+    border: #DBDBDB solid 2px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "titulo titulo titulo del"
+    "text text text del";
+}
+
+.tilte{
+    grid-area: titulo;
+    padding: 0px 5px;
+    font-size: 16px;
+}
+
+.text{
+    max-width: 565px;
+    padding: 5px;
+    grid-area: text;
+}
+
+.del{
+    grid-area: del;
+    background-color: red;
+}
+
+button{
+    margin: 2px;
+    max-height: 20px;
+    width: 20px;
+    outline: none;
+    border: none; 
+    font-size: 18px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
